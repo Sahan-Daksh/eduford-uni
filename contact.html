@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Eduford</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,19 +30,49 @@
         <h1>About Us</h1>
     </section>
 
-    <!--- About Content --->
-    <section class="about-us">
+    <!--- Location --->
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19866.326340438354!2d-0.1514777746557425!3d51.5078808678053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ddae95b455%3A0xcd1d64863bc57f40!2sWestminster%2C%20London%2C%20UK!5e0!3m2!1sen!2slk!4v1696123009961!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
         <div class="row">
-            <div class="about-col">
-                <h1>We are ranked in US</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquid similique ipsum laboriosam iste praesentium animi corporis autem voluptate mollitia. Suscipit doloribus aut odit sint ratione esse voluptas consectetur animi!</p>
-                <a href="" class="join-btn red-btn">EXPLORE NOW</a>
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>309 Regent Street</h5>
+                        <p>London W1B 2HW, UK</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+44 6875234935</h5>
+                        <p>Monday to Saturday, 9AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@eduford.org</h5>
+                        <p>Replies within a day</p>
+                    </span>
+                </div>
             </div>
-            <div class="about-col">
-                <img src="images/about.jpg">
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter the subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="join-btn red-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
+    
     
 
     <!--- Footer --->
